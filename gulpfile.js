@@ -22,7 +22,7 @@ gulp.task('sass', function () {
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(file('CNAME', 'www.mccrorycountdown.com'))
+    // .pipe(file('CNAME', 'www.mccrorycountdown.com'))
     .pipe(ghPages());
 });
 
