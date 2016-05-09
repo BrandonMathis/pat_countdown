@@ -1,0 +1,11 @@
+{
+  "name": "patcountdown",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "*",
+    "jquery": "*",
+    "FlipClock": "~0.7.7",
+    "flipclock": "~0.7.7"
+  },
+  "devDependencies": {}
+}
