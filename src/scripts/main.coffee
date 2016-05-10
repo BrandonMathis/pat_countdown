@@ -18,9 +18,9 @@ class Countdown
 
   isHeOut: ->
     if Date.now == @date_pat_out
-      $('.answer').html("<img src='/images/yes.png'/>")
+      $('.answer').html("<img src='images/yes.png'/>")
     else
-      $('.answer').html("<img src='/images/no.png'/>")
+      $('.answer').html("<img src='images/no.png'/>")
 
   countdown: ->
     our_date = Date.now()
@@ -32,10 +32,14 @@ class Countdown
     )
 
   patfact: ->
-    $('.patfact .fact > p').html(_.sample(@patfacts))
+    $('header h1').html(_.sample(@patfacts))
 
   patfacts:
-    []
+    [
+      "DAY'S TILL PAT HITS THE BRICKS",
+      "DAY'S TILL PAT IS OUT",
+      "PAT MCCRORY COUNTDOWN",
+    ]
 
 countdown = new Countdown
 countdown.start()
