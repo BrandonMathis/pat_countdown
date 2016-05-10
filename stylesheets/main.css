@@ -409,7 +409,7 @@ body {
   background-color: #FFF;
   color: #211f20;
   font-family: Oswald;
-  background: url("/images/bg.jpg") repeat; }
+  background: url("images/bg.jpg") repeat; }
 
 h1 {
   letter-spacing: 4px; }
