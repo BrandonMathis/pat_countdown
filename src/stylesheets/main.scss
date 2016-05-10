@@ -10,7 +10,8 @@ body {
   background-color: #FFF;
   color: $dark-black;
   font-family: Oswald;
-  background: url('images/bg.jpg') repeat;
+  background: url('../images/bg.jpg') repeat;
+  text-align: center;
 }
 
 h1 {
@@ -28,7 +29,6 @@ a {
 
 .is_pat_out {
   margin-bottom: 20px;
-  text-align: center;
   .question {
     margin-bottom: 100px;
   }
@@ -40,7 +40,6 @@ a {
 }
 
 .countdown {
-  text-align: center;
   .flipclock, .flip-clock-wrapper {
     margin: 0px;
     display: inline-block;
@@ -66,8 +65,6 @@ a {
 }
 
 .another-patfact {
-  text-align: center;
-
   a {
     color: $blue;
     cursor: pointer;
@@ -75,7 +72,6 @@ a {
 }
 
 footer {
-  // border-top: solid $dark-black 1px;
   padding: 20px 0px;
   margin: 0 auto;
   .twitter {
