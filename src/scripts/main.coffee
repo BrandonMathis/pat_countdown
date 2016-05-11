@@ -36,8 +36,8 @@ class Countdown
 
   patfacts:
     [
-      "DAY'S TILL PAT HITS THE BRICKS",
-      "DAY'S TILL PAT IS OUT",
+      "DAY'S 'TILL PAT HITS THE BRICKS",
+      "DAY'S 'TILL PAT IS OUT",
       "PAT MCCRORY COUNTDOWN",
     ]
 
