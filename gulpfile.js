@@ -7,10 +7,10 @@ var gulp        = require('gulp'),
     browserify  = require('browserify'),
     del         = require('del'),
     argv        = require('yargs').argv,
-    ghPages     = require('gulp-gh-pages'),
     file        = require('gulp-file'),
     coffeeify   = require('coffeeify');
     sass        = require('gulp-sass');
+    rsync       = require('gulp-rsync');
 
 gulp.task('sass', function () {
   gulp.src('src/stylesheets/*.{scss,sass}')
@@ -18,12 +18,6 @@ gulp.task('sass', function () {
       includePaths: ['src/bower_components']
      }).on('error', sass.logError))
     .pipe(gulp.dest('dist/stylesheets/'));
-});
-
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(file('CNAME', 'www.mccrorycountdown.com'))
-    .pipe(ghPages());
 });
 
 gulp.task('browser-sync', function() {
@@ -79,8 +73,6 @@ gulp.task('templates', function() {
     .pipe( gulp.dest('dist/') )
 });
 
-
-
 gulp.task('build', ['js', 'templates', 'images', 'sass']);
 
 gulp.task('serve', ['build', 'browser-sync'], function () {
@@ -91,3 +83,14 @@ gulp.task('serve', ['build', 'browser-sync'], function () {
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('deploy', function() {
+  return gulp.src('dist/**/*')
+    .pipe(rsync({
+      root: 'dist',
+      usernae: 'bemathis',
+      port: 44,
+      hostname: 'brandonmathis.me',
+      destination: '/var/www/pat_countdown'
+    }));
+});
