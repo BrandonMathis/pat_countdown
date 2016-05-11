@@ -409,7 +409,8 @@ body {
   background-color: #FFF;
   color: #211f20;
   font-family: Oswald;
-  background: url("../images/bg.jpg") repeat; }
+  background: url("../images/bg.jpg") repeat;
+  text-align: center; }
 
 h1 {
   letter-spacing: 4px; }
@@ -422,8 +423,7 @@ a {
   text-decoration: none; }
 
 .is_pat_out {
-  margin-bottom: 20px;
-  text-align: center; }
+  margin-bottom: 20px; }
   .is_pat_out .question {
     margin-bottom: 100px; }
 
@@ -431,15 +431,14 @@ a {
   margin: 0px auto;
   width: 700px; }
 
-.countdown {
-  text-align: center; }
-  .countdown .flipclock, .countdown .flip-clock-wrapper {
-    margin: 0px;
-    display: inline-block;
-    width: auto;
-    margin-bottom: 20px; }
-  .countdown .flip-clock-label {
-    display: none; }
+.countdown .flipclock, .countdown .flip-clock-wrapper {
+  margin: 0px;
+  display: inline-block;
+  width: auto;
+  margin-bottom: 20px; }
+
+.countdown .flip-clock-label {
+  display: none; }
 
 .patfact {
   font-family: "Roboto" sans-serif; }
@@ -450,11 +449,9 @@ a {
   .patfact .hashtag {
     margin-bottom: 30px; }
 
-.another-patfact {
-  text-align: center; }
-  .another-patfact a {
-    color: #3579E4;
-    cursor: pointer; }
+.another-patfact a {
+  color: #3579E4;
+  cursor: pointer; }
 
 footer {
   padding: 20px 0px;
