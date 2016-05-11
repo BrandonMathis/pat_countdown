@@ -12,6 +12,7 @@ class Countdown
     @isHeOut()
     @countdown()
     @patfact()
+    @patimage()
     $('.another-patfact').click( =>
       @patfact()
     )
@@ -33,6 +34,12 @@ class Countdown
 
   patfact: ->
     $('header h1').html(_.sample(@patfacts))
+
+  patimage: ->
+
+  patimages:
+    [
+    ]
 
   patfacts:
     [

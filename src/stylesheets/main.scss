@@ -28,7 +28,7 @@ a {
 }
 
 .is_pat_out {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   .question {
     margin-bottom: 100px;
   }
@@ -40,6 +40,7 @@ a {
 }
 
 .countdown {
+  margin-bottom: 50px;
   .flipclock, .flip-clock-wrapper {
     margin: 0px;
     display: inline-block;
@@ -65,6 +66,7 @@ a {
 }
 
 .another-patfact {
+  margin: 0px;
   a {
     color: $blue;
     cursor: pointer;
@@ -90,12 +92,13 @@ footer {
     .question {
       margin-bottom: 50px;
     }
-    .answer img{
+    img{
       width: 200px
     }
   }
 
   .countdown{
+    margin-bottom: 10px;
     h1 {
       font-size: 21px
     }
