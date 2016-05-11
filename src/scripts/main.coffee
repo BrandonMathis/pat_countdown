@@ -36,9 +36,13 @@ class Countdown
     $('header h1').html(_.sample(@patfacts))
 
   patimage: ->
+    $('.is_pat_out .img').html("<img src='#{_.sample(@patimages)}' height='300'/>")
 
   patimages:
     [
+      "images/pat1.png",
+      "images/pat2.jpg",
+      "images/pat3.jpg"
     ]
 
   patfacts:
