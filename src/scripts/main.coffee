@@ -36,7 +36,7 @@ class Countdown
     $('header h1').html(_.sample(@patfacts))
 
   patimage: ->
-    $('.is_pat_out .img').html("<img src='#{_.sample(@patimages)}' height='300'/>")
+    $('.is_pat_out .img').html("<img src='#{_.sample(@patimages)}'/>")
 
   patimages:
     [
@@ -47,8 +47,8 @@ class Countdown
 
   patfacts:
     [
-      "DAY'S 'TILL PAT HITS THE BRICKS",
-      "DAY'S 'TILL PAT IS OUT",
+      "DAYS 'TILL PAT HITS THE BRICKS",
+      "DAYS 'TILL PAT IS OUT",
       "PAT MCCRORY COUNTDOWN",
     ]
 
