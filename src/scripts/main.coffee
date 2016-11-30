@@ -6,7 +6,7 @@ FlipClock = require("flipclock")
 
 class Countdown
 
-  date_pat_out: (new Date(2016, 11, 8, 0, 0, 0, 0))
+  date_pat_out: (new Date("Jan 1, 2017"))
 
   start: ->
     @isHeOut()
@@ -25,11 +25,13 @@ class Countdown
 
   countdown: ->
     our_date = Date.now()
-    time_till_pat_out = (@date_pat_out - our_date) / 1000
+    time_till_pat_out = 0
+    if new Date(@date_pat_out) > Date.now()
+      time_till_pat_out = (@date_pat_out - our_date) / 1000
 
     clock = $('.flipclock').FlipClock( time_till_pat_out,
       clockFace: "DailyCounter"
-      countdown: true
+      countdown: false
     )
 
   patfact: ->
